@@ -73,7 +73,7 @@ export default function Listmenu() {
                         className={menuClass}
                     >
                         <BiErrorCircle className="mr-4 text-xl" />
-                        <span>Error 403</span>
+                        <span>Error 404</span>
                     </NavLink>
                 </li>
             </ul>
