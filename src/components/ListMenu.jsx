@@ -1,6 +1,6 @@
 import { BiErrorCircle } from "react-icons/bi";
 import { IoMdPeople } from "react-icons/io";
-import { MdPeople } from "react-icons/md";
+import { MdFastfood, MdPeople } from "react-icons/md";
 import { BsBorderWidth } from "react-icons/bs";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -46,6 +46,18 @@ export default function Listmenu() {
                         <span>Customer</span>
                     </NavLink>
                 </li>
+
+                <li>
+                    <NavLink
+                        id="menu-4"
+                        to="/products"
+                        className={menuClass}
+                    >
+                        <MdFastfood className="mr-4 text-xl" />
+                        Products
+                    </NavLink>
+                </li>
+
                 <li>
                     <NavLink
                         id="menu-error-400"
