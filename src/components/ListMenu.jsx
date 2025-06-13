@@ -60,6 +60,17 @@ export default function Listmenu() {
 
                 <li>
                     <NavLink
+                        id="menu-4"
+                        to="/notes"
+                        className={menuClass}
+                    >
+                        <MdFastfood className="mr-4 text-xl" />
+                        Notes
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink
                         id="menu-error-400"
                         to="/400"
                         className={menuClass}

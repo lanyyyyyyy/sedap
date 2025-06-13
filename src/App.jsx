@@ -3,7 +3,6 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading";
 import About from "./pages/guest/About";
-// import Products from "./pages/Products";
 
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
@@ -18,6 +17,7 @@ const Guest = React.lazy(() => import("./pages/guest/Index"));
 const GuestLayout = React.lazy(() => import("./layouts/GuestLayout"));
 const Products = React.lazy(() => import("./pages/Products"));
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
+const Notes = React.lazy(() => import("./pages/Notes"));
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/notes" element={<Notes />} />
         </Route>
 
         {/* Layout untuk auth pages */}
